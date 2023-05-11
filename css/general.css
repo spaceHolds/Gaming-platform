@@ -1,0 +1,127 @@
+:root {
+  --general-bg: rgb(0, 0, 0);
+  --bg-gradient: linear-gradient(180deg, rgba(0, 0, 0, 1) 20%, rgba(44, 29, 14, 1) 80%);
+  --hover-transition: 0.4s ease-in-out;
+  --main-text-color: #ffffff;
+  --main-text-color-hover: #ffffff59;
+  --contacts-btn-color: rgb(250, 144, 33);
+  --contacts-btn-hover: rgba(250, 145, 33, 0.627);
+  --details-btn-color: rgb(207, 65, 11);
+  --details-btn-gradient: linear-gradient(100deg, rgba(207, 65, 11, 1) 20%, rgba(205, 128, 50, 1) 80%);
+  --details-bg-hover: linear-gradient(100deg, rgba(207, 65, 11, 0.6937368697478992) 20%, rgba(205, 128, 50, 0.6993391106442577) 80%);
+  --see-all-btn-bg: rgb(47, 43, 40);
+  --services-img-bg: #ffff;
+  --btn-color: rgb(232, 125, 15);
+  --subscription-wrap: rgb(28, 20, 15);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 50%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  background-color: var(--general-bg);
+  color: var(--main-text-color);
+  width: 100vw;
+  width: 100svw;
+  max-width: 2000px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+
+header nav, header h2 {
+  margin: 30px;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--main-text-color);
+  transition: var(--hover-transition);
+  font-weight: 300;
+}
+
+a:hover {
+  color: var(--main-text-color-hover);
+}
+
+p {
+  font-weight: 300;
+}
+
+h3 {
+  color: var(--btn-color);
+  font-size: 18px;
+}
+
+h4 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 23px;
+  width: 40%;
+  text-align: center;
+  font-weight: 400;
+}
+
+footer {
+  display: flex;
+  margin: 0 150px 50px;
+  font-size: 12px;
+  padding-top: 50px;
+  justify-content: center;
+}
+
+footer div {
+  margin-right: 60px;
+}
+
+@media (max-width: 1065px) {
+  footer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1000px) {
+  header {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  footer {
+    margin: 0 60px 50px;
+  }
+
+  footer div {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 550px) {
+  header nav {
+    position: absolute;
+    top: -200px;
+  }
+}
